@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 export const App = () => {
+    const [num, setNum] = useState(0);
 
     const onClickButton = () =>{
-        alert("すげー表示された");
+        // どっちでもかける。prevの方が妥当かもしれん。
+        // setNum(num + 1);
+        setNum( (prev) => prev + 1);
     };
     return(
         // 1つのタグで囲んでいこう
@@ -13,6 +17,7 @@ export const App = () => {
             <ColoredMessage color= "pink" fontSize= "10px">元気です！</ColoredMessage>
             <ColoredMessage color= "white" fontSize="40px">hey!</ColoredMessage>
             <button onClick={ onClickButton }>ボタン</button>
+            <p>{ num }</p>
         </>
     );
 };
