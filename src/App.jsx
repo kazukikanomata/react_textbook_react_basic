@@ -1,7 +1,18 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 export const App = () => {
+
+    // stateは状態を管理する
     const [num, setNum] = useState(0);
+
+    // numが変更してきた時、alertを表示する。
+    // 画面を表示して初期データを取得するときに使う。
+    useEffect(() => {
+        alert();
+    }, [num]);
+
+    
 
     const onClickButton = () =>{
         // どっちでもかける。prevの方が妥当かもしれん。
