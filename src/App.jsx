@@ -9,9 +9,9 @@ export const App = () => {
         // fragment便利すぎ
         <>
             <h1 style={{ color : "red" }}>Hello World!!</h1>
-            <ColoredMessage color= "blue" message= "お元気ですか？" fontSize= "20px" />
-            <ColoredMessage color= "pink" message= "元気です！" fontSize= "10px" />
-            <ColoredMessage color= "white" message= "hey!" fontSize="40px"/>
+            <ColoredMessage color= "blue" fontSize= "20px">お元気ですか？</ColoredMessage>
+            <ColoredMessage color= "pink" fontSize= "10px">元気です！</ColoredMessage>
+            <ColoredMessage color= "white" fontSize="40px">hey!</ColoredMessage>
             <button onClick={ onClickButton }>ボタン</button>
         </>
     );
