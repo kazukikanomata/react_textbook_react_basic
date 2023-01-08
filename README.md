@@ -69,3 +69,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # react_textbook_react_basic
+
+## 俺メモ
+
+### CSS Moduleファイルで色を定義する
+<ul>
+    <li>.scssフォルダを作成別名で呼び込むのは良い</li>
+    <li>定義の仕方は "className={ classes.container }" みたいに書く</li>
+</ul>
+
+### StyledJSX
+<ul>
+    <li>next.jsに組み込まれているライブラリっぽい</li>
+    <li>componentの中にCSSを当てていく感じ。まとまめてかけるのはでかい</li>
+    <li>書き方はこんな感じ "<style jsx></style>"</li>
+    <li>定義の仕方はclassNameに当てていくかんじ</li>
+</ul>
+
+### Styled Components
+<ul>
+    <li>Componentsに定義していく感じ</li>
+    <li>classNameには当てていかない</li>
+    <li>SContainerとかキャメルケースを使った当てなづけが特徴的</li>
+    <li>SCSS記法が使えることが良いっぽい</li>
+</ul>
+
+### Emotion
+<ul>
+    <li>幅広い使い方ができる点</li>
+    <li>Scssの書き方もできる</li>
+</ul>

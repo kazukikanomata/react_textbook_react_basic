@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
+import { TailwindCss } from "./components/Tailwindcss";
 export const App = () => {
 
     // stateは状態を管理する
@@ -9,7 +10,7 @@ export const App = () => {
     // numが変更してきた時、alertを表示する。
     // 画面を表示して初期データを取得するときに使う。
     useEffect(() => {
-        alert();
+        // alert();
     }, [num]);
 
     
@@ -24,6 +25,7 @@ export const App = () => {
         // fragment便利すぎ
         <>
             <h1 style={{ color : "red" }}>Hello World!!</h1>
+            <TailwindCss/>
             <ColoredMessage color= "blue" fontSize= "20px">お元気ですか？</ColoredMessage>
             <ColoredMessage color= "pink" fontSize= "10px">元気です！</ColoredMessage>
             <ColoredMessage color= "white" fontSize="40px">hey!</ColoredMessage>
